@@ -2,8 +2,8 @@
 	"name": "cron-japanese-parser",
 	"version": "1.0.1",
 	"files": ["dist"],
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"main": "dist/main.js",
+	"types": "dist/main.d.ts",
 	"bin": {
 		"cron-to-ja": "dist/index.js"
 	},

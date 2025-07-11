@@ -1,13 +1,4 @@
 #!/usr/bin/env node
-export {
-	parseCron,
-	parseMinute,
-	parseHour,
-	parseDay,
-	parseMonth,
-	parseWeekday,
-} from "./cronParser";
-
 import { parseCron } from "./cronParser";
 
 const cronExpression = process.argv[2];
