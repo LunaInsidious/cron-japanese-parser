@@ -1,6 +1,14 @@
 {
-	"extends": "@tsconfig/strictest/tsconfig.json",
 	"compilerOptions": {
-		"outDir": "./dist"
-	}
+		"target": "es2022",
+		"module": "commonjs",
+		"outDir": "./dist",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node"
+	},
+	"include": ["src/**/*"],
+	"exclude": ["**/*.test.ts", "vite.config.ts", "dist"]
 }

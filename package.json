@@ -1,9 +1,16 @@
 {
-	"name": "test",
+	"name": "cron-japanese-parser",
 	"version": "1.0.0",
+	"files": ["dist"],
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"bin": {
+		"cron-to-ja": "dist/index.js"
+	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npm run build && node dist/index.js",
+		"test": "vitest",
+		"test:ui": "vitest --ui",
 		"build": "tsc"
 	},
 	"keywords": [],
@@ -14,6 +21,8 @@
 		"@biomejs/biome": "1.9.4",
 		"@tsconfig/strictest": "^2.0.5",
 		"@types/node": "^22.15.2",
-		"typescript": "^5.8.3"
+		"typescript": "^5.8.3",
+		"vite": "7.0.4",
+		"vitest": "3.2.4"
 	}
 }
